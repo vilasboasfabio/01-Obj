@@ -85,3 +85,7 @@ function editPost (index){
 
 
 }
+function removePost(index){
+    posts.splice(index, 1);
+    showPosts();
+}
