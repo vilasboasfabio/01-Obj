@@ -1,4 +1,8 @@
 /*Reset Css*/
+
+.hidden {
+    display: none;
+}
 *{
     padding: 0%;
     margin: 0%;
@@ -82,3 +86,4 @@ butto:hover{
 .post button:hover{
     background-color: #a00000;
 }
+

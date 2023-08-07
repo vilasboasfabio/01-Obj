@@ -47,6 +47,7 @@ function storePost(title, resume, publisher, date){
 
 }
 function showPosts(){
+   document.getElementById("list").classList.remove("hidden");
     let showContent = '';
 
     posts.forEach((post, index) => {
@@ -88,4 +89,9 @@ function editPost (index){
 function removePost(index){
     posts.splice(index, 1);
     showPosts();
+    if(posts.length == 0){  
+        document.getElementById("list").classList.add("hidden");
+
+    }
+  
 }
