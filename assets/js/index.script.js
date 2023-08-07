@@ -1,4 +1,4 @@
-const post = [];
+const posts = [];
 
 function savePost(){
     const title = document.getElementById('title').value;
@@ -12,7 +12,6 @@ function savePost(){
 
 }
 
-
 }
 function storePost(title, resume, publisher, date){
     const post = {
@@ -22,5 +21,31 @@ function storePost(title, resume, publisher, date){
         date
     };
 
-    posts.push(post);
+    posts.push(post); 
+    showPosts();
+    console.log(post);
+    console.log(posts);
+
 }
+function showPosts(){
+    let showContent = '';
+
+    posts.forEach((post, index) => {
+        showContent += `
+            <div class="post"><h2>${post.title}</h2>
+            <p><strong>Resumo</strong>${post.resume}</p>
+            <p><strong>Publicado por</strong>${post.publisher}</p>
+            <p><strong>Data de publicação</strong>${post.date}</p>
+
+            <button onclick="editPost(${index})">Editar</button>
+            <button onclick="removePost(${index})">Remover</button>
+
+          
+            </div>
+
+        `;
+
+})
+document.getElementById('list').innerHTML = showContent;
+}
+

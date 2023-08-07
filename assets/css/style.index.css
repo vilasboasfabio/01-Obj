@@ -12,18 +12,20 @@ h1{
     color: #d30000;
 
 }
-#form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#form{
+   max-width: 600px;
     width: 100%;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px; 
+    border-radius: 8px;
     background-color: #ffffff;
-
 }
 label,
 inoput,
@@ -32,6 +34,7 @@ textarea{
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
+    max-width: 500px;
 }
 textarea{
     resize: none;
@@ -40,12 +43,12 @@ textarea{
 button{
     background-color: #d30000;
     cursor: pointer;
-    width: 10%;
-    color: #f0f0f0;
+    width: 100%;
+    color: #ffffff;
     padding: 0.25rem;
     border-radius: 8px;
 }
 butto:hover{
     background-color: #a00000;
-    
+
 }

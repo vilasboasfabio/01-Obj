@@ -8,6 +8,7 @@
     <title>Posts</title>
 </head>
 <body>
+    <main>
     <h1>Próximos Posts</h1>
     <div id="form">
     <div>
@@ -27,10 +28,13 @@
         <input type="date" name="date" id="date" required>
     </div>
     <div>
-        <button id="send">Enviar</button>
+        <button id="send" onclick="savePost()">Enviar</button>
     </div>
 </div>
-    <div id="list"></div>
+    <div id="list">
+
+    </div>
+    </main>
   
 </body>
 </html>
