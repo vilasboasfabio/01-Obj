@@ -28,7 +28,7 @@ main{
     background-color: #ffffff;
 }
 label,
-inoput,
+input,
 textarea{
     display: block;
     margin-bottom: 10px;
@@ -51,4 +51,34 @@ button{
 butto:hover{
     background-color: #a00000;
 
+}
+#list{
+    background-color: #ffffff;  
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+.post{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.post h2{
+    color: #d30000;
+    margin-bottom: 5px;
+}
+.post button{
+    background-color: #d30000;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+}
+.post button:hover{
+    background-color: #a00000;
 }
