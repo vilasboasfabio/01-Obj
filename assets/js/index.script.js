@@ -9,9 +9,9 @@ function saveUser() {
 
 
     if (userIndex == -1) {
-        // Remova a chamada recursiva de verifyUser() daqui
+       
         if (name && lastname && age && eyeColor) {
-            // As verificações são feitas apenas uma vez, aqui, e se tudo estiver correto, então chama saveUser()
+         
             storeUser(name, lastname, age, eyeColor);
             cleanFields();
         }
