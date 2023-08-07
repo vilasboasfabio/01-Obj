@@ -53,14 +53,15 @@ function storeUser(name, lastname, age, eyeColor) {
 
 function showUsers() {
     document.getElementById("list").classList.remove("hidden");
+    document.getElementById("theusers").classList.remove("hidden");
     let showContent = '';
 
     users.map((user, index) => {
         showContent += `
-            <div class="post"><h2>${user.name}</h2>
-            <p><strong>Resumo</strong>${user.lastname}</p>
-            <p><strong>Publicado por</strong>${user.age}</p>
-            <p><strong>Data de publicação</strong>${user.eyeColor}</p>
+            <div class="post"><h2>Nome: ${user.name}</h2>
+            <p><strong>Sobrenome:</strong> ${user.lastname}</p>
+            <p><strong>Publicado por:</strong> ${user.age}</p>
+            <p><strong>Cor dos olhos:</strong> ${user.eyeColor}</p>
 
             <button onclick="editUser(${index})">Editar</button>
             <button onclick="removeUser(${index})">Remover</button>
