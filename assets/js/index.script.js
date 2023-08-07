@@ -7,7 +7,7 @@ function saveUser() {
     const age = document.getElementById('age').value;
     const eyeColor = document.getElementById('eyeColor').value;
 
-
+    verifyUser(name, lastname, age, eyeColor);
     if (userIndex == -1) {
        
         if (name && lastname && age && eyeColor) {
@@ -28,7 +28,7 @@ function saveUser() {
             cleanFields();
         }
     }
-    verifyUser(name, lastname, age, eyeColor);
+  
 }
 
 // Resto do código permanece igual...
